@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <form class="calculator" name="calc">
+        <input class="value" type="text" name="txt" />
+
+        <span class="num limpar" onclick="document.calc.txt.value =''">C</span>
+        <span class="num equal" onclick="calcular()">=</span>
+        <!--<span class="num plus" onclick="document.calc.txt.value +='+'">+</span>-->
+
+        <span class="num">PÃO</span>
+        <span class="num">CARNE</span>
+        <span class="num">COMPL.</span>
+
+        <span class="num"></span>
+
+        <span class="num" onclick="document.calc.txt.value +='+3'">Brioche</span>
+        <span class="num" onclick="document.calc.txt.value +='+8'">Picanha</span>
+        <span class="num" onclick="document.calc.txt.value +='+4'">Bacon</span>
+        <span class="num" onclick="document.calc.txt.value +='+1.5'">Batata palha</span>
+        <span class="num" onclick="document.calc.txt.value +='+2.5'">Gergilim</span>
+        <span class="num" onclick="document.calc.txt.value +='+7'">Costela</span>
+        <span class="num" onclick="document.calc.txt.value +='+2'">Ovo</span>
+        <span class="num" onclick="document.calc.txt.value +='+0.75'">Alface</span>
+        <span class="num" onclick="document.calc.txt.value +='+2'">Hambúguer</span>
+        <span class="num" onclick="document.calc.txt.value +='+5'">Blend</span>
+        <span class="num" onclick="document.calc.txt.value +='+2'">Q. Prato</span>
+        <span class="num" onclick="document.calc.txt.value +='+0.75'">Cebola roxa</span>
+
+        <span class="num"></span>
+
+        <span class="num" onclick="document.calc.txt.value +='+4'">Frango</span>
+        <span class="num" onclick="document.calc.txt.value +='+1.5'">Q. Mussarela</span>
+        <span class="num" onclick="document.calc.txt.value +='+0.75'">Milho</span>
+        <span class="num"></span>
+        <span class="num"></span>
+        <span class="num" onclick="document.calc.txt.value +='+3.5'">Q. Parmesão</span>
+        <span class="num" onclick="document.calc.txt.value +='+0.75'">Tomate</span>
+        <span class="num"></span>
+        <span class="num"></span>
+        <span class="num" onclick="document.calc.txt.value +='+2.5'">Q. Cheddar</span>
+        <span class="num" onclick="document.calc.txt.value +='+1.5'">Catupiry</span>
+        <span class="num entre" onclick="document.calc.txt.value +='+1'">Entrega +1</span>
+        <span class="num entre" onclick="document.calc.txt.value +='+2'">Entrega +2</span>
+        <span class="num entre" onclick="document.calc.txt.value +='+3'">Entrega +3</span>
+        <span class="num entre" onclick="document.calc.txt.value +='+4'">Entrega +4</span>
+    </form>
+
+    <form class="total" name="tot">
+        <span class="titulo" onclick="document.calc.txt.tot +='valorCalculado'">Lanche 1:</span> <br>
+        <input class="final" type="text" name="txt" /> <br>
+
+        <span class="titulo" onclick="document.calc.txt.tot +='valorCalculado'">Lanche 2:</span> <br>
+        <input class="final" type="text" name="txt" /> <br>
+
+        <span class="titulo" onclick="document.calc.txt.tot +='valorCalculado'">Lanche 3:</span> <br> 
+        <input class="final" type="text" name="txt" /> <br>
+
+        <span class="titulo" onclick="document.calc.txt.tot +='valorCalculado'">Lanche 4:</span> <br>
+        <input class="final" type="text" name="txt" /> <br>
+
+        <span class="titulo" onclick="">Lanche 5:</span> <br>
+        <input class="final" type="text" name="txt" />
+
+              
+        
+    </form>
+
+    
+    <script src="scripts.js"></script>
+</body>
+
+</html>

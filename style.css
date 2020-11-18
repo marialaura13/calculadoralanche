@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    display: flex;
+    /* justify-content: center;*/
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px;
+    min-height: 100vh;
+    background: #1C1C1C;
+}
+.calculator {
+    position: center;
+    display: grid;
+}
+.calculator .value {
+    /* barra de valor */
+    grid-column: span 4; /* separar 4 digitos por linha */
+    height: 70px;
+    width: 600px;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+    background: #DCDCDC;
+}
+.calculator span {
+    /*BOTAO*/
+    display: grid;
+    width: 150px;
+    height: 40px;
+    color: #fff;
+    background: #111;
+    place-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.calculator span:active {
+    /*MUDA QUANDO CLICA*/
+    background: #fff;
+    color: #111; /* muda a cor da fonte */
+}
+.calculator span.limpar {
+    /*LIMPAR CE*/
+
+    grid-column: span 2; /*ocupa 2 espaços*/
+    width: 300px;
+    height: 60px;
+    background: #ff3077;
+}
+.calculator span.equal {
+    /*IGUAL*/
+    grid-column: span 2; /*ocupa 2 espaços*/
+    width: 300px;
+    height: 60px;
+    background: #4B0082;
+}
+.calculator .entre {
+    background: #363636;
+}
+/* LADO DIREITO SOMA DOS LAnCHES - VALOR FINAL */
+.total .final {
+    /* barra de valor */
+    grid-column: span 1; /* separar 4 digitos por linha */
+    height: 40px;
+    width: 200px;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+    margin: 10px;
+}
+.total .titulo {
+    grid-column: span 1; /*ocupa 2 espaços*/
+    width: 150px;
+    height: 50px;
+    background: #ff3077;
+    align-content: center;
+    color: white;
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
